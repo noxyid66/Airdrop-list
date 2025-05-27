@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+Options All -Indexes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^authority?$ index.php
+RewriteRule ^home?$ public/home.php
+RewriteRule ^activity_id?$ public/path_info.php
+RewriteRule ^zkprot?$ public/V2/index.php
+RewriteRule ^root?$ public/V2/root/index.php
+RewriteRule ^update?$ public/V2/root/update/index.php
+RewriteRule ^create?$ public/V2/root/create/index.php
+</IfModule>
