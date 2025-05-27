@@ -40,7 +40,7 @@ CREATE TABLE `authentication` (
 --
 
 INSERT INTO `authentication` (`id`, `auth`, `pin`, `user`) VALUES
-(1, '0x0RC0XW732566a403y2g692926P9Fb8K14EQ1612u51f566875779840', '251216', 'Noxyid66');
+(1, '0x1Ra732566a403y2g692926P9Fb8K14EQ1612u51f566875779840', 'what are you doing.step mom?', 'who?');
 
 --
 -- Indexes for dumped tables
