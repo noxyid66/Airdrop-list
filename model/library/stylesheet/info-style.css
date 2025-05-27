@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+.view-card {
+    max-width: 95%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ffffff40;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+.title h2 {
+    color: white;
+    background-color: #5B5B5B;
+    height: 34px;
+    width: 200px;
+    padding-top: 6px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.info {
+    margin-top: 30px;
+}
+.funding {
+    display: flex;
+    margin-top: 0px;
+}
+.funding h2 {
+    padding-left: 20px;
+    width: 55%;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+}
+.funding h3 {
+    width: 45%;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.link {
+    display: flex;
+    margin-top: 5px;
+}
+.link input {
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 2px;
+    margin-left: 10px;
+    padding-left: 5px;
+    height: 28px;
+    width: 85%;
+    background: #E0E0E0;
+    font-size: 12px;
+    font-weight: 400;
+}
+.link i {
+    padding-top: 4px;
+    padding-left: 5px;
+    font-size: 20px;
+    width: 10%;
+    text-align: center;
+}
+
+.tutorial {
+    margin-top: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+.tutorial h2 {
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+}
+.tutorial pre {
+    color: #616161/;
+    margin-top: 2px;
+    font-size: 10px;
+    font-weight: 250;
+    text-align: left;
+    border-collapse: collapse;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.5;
+    word-spacing: -2.5;
+}
+.note {
+    margin-top: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+}
+.note h2 {
+    content: "note";
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+}
+.note h3 {
+    background-color: #F5F5F5;
+    border-left: 1.5px solid #000;
+    color: #616161;
+    margin-top: -1px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: left;
+}
+.footer {
+    display: flex;
+    margin-top: 10px;
+}
+.footer h2 {
+    padding-left: 10px;
+    width: 50%;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: left;
+}
+.footer h3 {
+    letter-spacing: 0.1;
+    width: 50%;
+    font-size: 11px;
+    font-weight: 400;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.notif {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.notif .popuptext {
+    padding-bottom: 3px;
+    visibility: hidden;
+    width: 90px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: 70px;
+}
+.notif .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.notif .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+.notif .of {
+    visibility: hidden;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;;
+    transition-duration: 1000ms;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
